@@ -1,380 +1,436 @@
-@font-face {
-    font-family: Poppinstitulo;
-    src: url(./Multimedia/Fonts/poppins/Poppins-Bold.ttf);
+@charset "UTF-8";
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @font-face {
-    font-family: GlacialRegular;
-    src: url(./Multimedia/Fonts/GlacialIndifference-Regular.otf);
+  font-family: Poppinstitulo;
+  src: url(./Multimedia/Fonts/poppins/Poppins-Bold.ttf);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: GlacialRegular;
+  src: url(./Multimedia/Fonts/GlacialIndifference-Regular.otf);
 }
-html, body {
-    height: 100%;
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 /*PALETA DE COLORES:
 .color1 { #e8ddcb }; --> cafe claro
 .color2 { #cdb380 }; --> beige
 .color3 { #036564 }; --> petroleo
 .color4 { #033649 }; --> azul
 .color5 { #031634 }; --> azul marino*/
-
 /*---------------------------ESTILO DEL HEADER-------------------------------*/
-header{
-    height: 60px;
-    width: 100%;
-    background-color: #033649;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+header {
+  height: 60px;
+  width: 100%;
+  background-color: #033649;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
+
 .navbar {
-    z-index: 1000; 
+  z-index: 1000;
 }
-.navbar-brand{ /*ESTILO DEL TÃTULO EN EL HEADER*/
-    color: #cdb380 !important;
-    font-family: Poppinstitulo;
-    font-size: 25px;
+
+.navbar-brand {
+  /*ESTILO DEL TÃTULO EN EL HEADER*/
+  color: #cdb380 !important;
+  font-family: Poppinstitulo;
+  font-size: 25px;
 }
-#menuButton{
-    color: #cdb380;
-    font-size: 22px;
+
+#menuButton {
+  color: #cdb380;
+  font-size: 22px;
 }
-span{
-    color: #cdb380;
+
+span {
+  color: #cdb380;
 }
-.navbar-dark .navbar-nav .nav-link{
-    width: 100%;
-    background-color: #033649;
-    color: #cdb380;
-    text-align: center;
-    font-family: GlacialRegular;
+
+.navbar-dark .navbar-nav .nav-link {
+  width: 100%;
+  background-color: #033649;
+  color: #cdb380;
+  text-align: center;
+  font-family: GlacialRegular;
 }
+
 /*----------------------FIN DEL ESTILO DEL HEADER-----------------------*/
 /*----------------------ESTILOS DEL BODY-------------------------------*/
-body{
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height: 100%;
-    overflow-x: hidden;
-    margin-bottom: 0;
-    overflow-y: scroll;
+body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  margin-bottom: 0;
+  overflow-y: scroll;
 }
-main{
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    }
 
-.video-background{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Esto es para poner el video detras del contenido */
+main {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-.content{
-    position: relative;
-    color: #cdb380;
-    z-index: 1;
+
+.video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
+
+.content {
+  position: relative;
+  color: #cdb380;
+  z-index: 1;
+}
+
 /*               INICIO DEL ESTILO DEL TEXTO DEL HOME             */
-.TextoInicio{
-    padding: 20px;
-    max-width: 80%;
-    margin: auto;
-    margin-top: 10%;
-    background: rgba(3, 54, 73, 0.5);
-    font-family: GlacialRegular;
-    position: relative;
-    z-index: 2; /* AÃ±adido para asegurar que el texto esta encima del video */
+.TextoInicio {
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  background: rgba(3, 54, 73, 0.5);
+  font-family: GlacialRegular;
+  position: relative;
+  z-index: 2;
+  /* AÃ±adido para asegurar que el texto esta encima del video */
 }
-.boton{
-    background-color: #cdb380;
-    color: #033649;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+
+button {
+  background-color: #cdb380;
+  color: #033649;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
-.boton:hover{
-    background-color: #036564; /* Cambia el color de fondo al pasar el ratonn sobre el botonn */
-    color: #cdb380; /* Cambia el color del texto al pasar el raton sobre el boton */
+button:hover {
+  background-color: #036564;
+  color: #cdb380;
+  animation: pulso 1s infinite;
 }
+button:active {
+  transform: scale(0.9);
+}
+
 /*               INICIO DEL ESTILO DEL TEXTO DEL HOME             */
 /*-----------------------INICIO ESTILO GALERIA GRID-------------------*/
 .GaleriaInicio {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-    margin: 20px;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  margin: 20px;
+  margin-bottom: 30px;
 }
 
 .GaleriaItem {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 50px;
-    height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  height: 400px;
 }
-
 .GaleriaItem img {
-    width: 100%;
-    height: 100%; 
-    display: block;
-    border-radius: 8px;
-    text-align: center;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 
 .descripcion {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    color: #cdb380;
-    text-align: center;
-    font-size: 20px;
-    font-family: GlacialRegular;
-    background: rgba(3, 54, 73, 0.8);
-    border-radius: 0 0 8px 8px; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #cdb380;
+  text-align: center;
+  font-size: 20px;
+  font-family: GlacialRegular;
+  background: rgba(3, 54, 73, 0.8);
+  border-radius: 0 0 8px 8px;
 }
+
 /*-----------------------FIN ESTILO GALERÍA GRID-------------------*/
-
 /*-----------------------INICIO ESTILO SECCION NOSOTROS --------------*/
-.PaginaNosotros{
-    margin-top: 150px;
-}
-.galeria-grid {
-    display: grid;
-    margin-top: 60px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center; /* Alinea el contenido al centro */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
+.PaginaNosotros {
+  margin-top: 150px;
 }
 
+.galeria-grid {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 .galeria-grid img {
-    width: 100%;
-    height: 500px; /* Ajusta según tus preferencias */
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.ContenedorTextoNosotros{
-    padding: 18px;
-    margin-top: 20px;
-    margin-bottom: 80px;
+
+.ContenedorTextoNosotros {
+  padding: 18px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
-.TextoNosotros{
-    padding: 10px;
-    font-size: 17px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    color: #cdb380;
-    background: rgba(3, 54, 73, 0.8);
+
+.TextoNosotros {
+  padding: 10px;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #cdb380;
+  background: rgba(3, 54, 73, 0.8);
 }
 
 /*-----------------------FIN ESTILO SECCIÃ“N NOSOTROS --------------*/
 /*-----------------------INICIO SECCION CABAÃ‘AS -------------------*/
-.PaginaCabañas{
-    margin-top: 1000px;
+.PaginaCabañas {
+  margin-top: 1000px;
 }
-.TextoCabañas{
-    background: rgba(3, 54, 73, 0.8);
-    color: #cdb380;
-    padding: 10px;
-    margin-top: 12px;
-    font-family: GlacialRegular;
-    border-radius: 8px;
+
+.TextoCabañas {
+  background: rgba(3, 54, 73, 0.8);
+  color: #cdb380;
+  padding: 10px;
+  margin-top: 12px;
+  font-family: GlacialRegular;
+  border-radius: 8px;
 }
+
 .ContenedorGaleriaCabañas {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .ItemGaleriaCabaÃ±as {
-    padding: 10px;
-    transition: transform 0.7s;
-    height: 500px;
+  padding: 10px;
+  transition: transform 0.7s;
+  height: 500px;
 }
 
 .ItemGaleriaCabañas:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .ImagenGaleria {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 /*-----------------------FIN SECCION CABAÃ‘AS -------------------*/
 /*----------------------- INICIO SECCION PANORAMAS---------------*/
-.PaginaPanoramas{
-    margin-top: 220px;
+.PaginaPanoramas {
+  margin-top: 220px;
 }
+
 .card {
-    background-color: rgba(3, 54, 73, 0.8); 
-    max-height: 600px;
+  background-color: rgba(3, 54, 73, 0.8);
+  max-height: 600px;
 }
-.card-title{
-    color: #cdb380;
-}
+
+.card-title,
 .card-text {
-    color: #cdb380
+  color: #cdb380;
 }
-.btn{
-    background-color: #cdb380;
-    border: #cdb380;
-    color: #033649;
+
+.btn {
+  background-color: #cdb380;
+  color: #033649;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
+.btn:hover {
+  background-color: #036564;
+  color: #cdb380;
+  animation: pulso 1s infinite;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
 /*----------------------- FIN SECCION PANORAMAS---------------*/
 /*----------------------- INICIO SECCION CONTACTO-------------*/
-.PaginaContacto{
-    margin-top: 80px;
+.PaginaContacto {
+  margin-top: 80px;
 }
-.FondoTransparente{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(3, 54, 73, 0.7);
-    z-index: -1;
+
+.FondoTransparente {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 54, 73, 0.7);
+  z-index: -1;
 }
-.Formulario{
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
+
+.Formulario {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
 }
-.Formulario h6, .Formulario h5{
-    color: #cdb380;
-    font-family: GlacialRegular;
+.Formulario h6,
+.Formulario h5 {
+  color: #cdb380;
+  font-family: GlacialRegular;
 }
-.Formulario input[type="text"],
-.Formulario input[type="number"],
-.Formulario input[type="email"],
+.Formulario input[type=text], .Formulario input[type=number], .Formulario input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 .Formulario textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.Formulario input[type="submit"] {
-    background-color: #cdb380;
-    color: #033649;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.Formulario input[type=submit] {
+  background-color: #cdb380;
+  color: #033649;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .Formulario iframe {
-    width: 100%;
-    height: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 /*----------------------- FIN SECCION CONTACTO-------------*/
 /*----------------------ESTILO DEL FOOTER--------------------------------*/
 footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background-color: #033649;
-    color: #cdb380;
-    font-family: GlacialRegular;
-    text-align: center;
-    z-index: 2;
-    margin-top: 20px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #033649;
+  color: #cdb380;
+  font-family: GlacialRegular;
+  text-align: center;
+  z-index: 2;
+  margin-top: 20px;
 }
-footer .IconosRedes a{
-    color: #cdb380;
-    text-decoration: none;
-    font-size: 25px;
-    padding-bottom: 5px;
+footer .IconosRedes a {
+  color: #cdb380;
+  text-decoration: none;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
+
 /*----------------------FIN DEL ESTILO DEL FOOTER-------------------------*/
 /*-----------------------INICIO DE MEDIA QUERIES--------------------------*/
 @media (max-width: 320px) {
-    .card {
-        max-width: 100%;
-    }
+  .card {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
-    body {
-        padding-top: 150px;
-    }
-    .PaginaCabañas{
-        margin-top: 1400px;
-    }
-    .TextoInicio {
-        margin-top: 1450px;
-        padding: 20px; 
-    }
-
-    .GaleriaInicio {
-        grid-template-columns: 1fr;
-        gap: 15px; 
-        overflow-y: auto;
-        max-height: none; 
-    }
-
-    .GaleriaItem {
-        height: auto;
-    }
-
-    .GaleriaItem img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .galeria-grid {
-        margin-top: 1380px; /* Ajusta según tus preferencias */
-        padding: 10px;
-        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
-        justify-content: center;
-    }
-
-    .galeria-grid img {
-        height: auto; /* Ajusta según tus preferencias */
-    }
-
-    .ContenedorTextoNosotros {
-        margin-top: 10px; /* Ajusta según tus preferencias */
-        margin-bottom: 80px; /* Ajusta según tus preferencias */
-    }
-
-    .ContenedorGaleriaCabañas{
-        gap: 10px;
-    }
-    .PaginaPanoramas{
-        margin-top: 100px;
-    }
-    .CardsPanoramas{
-        margin-top: 1100px;
-    }
-
+  body {
+    padding-top: 150px;
+  }
+  .PaginaCabañas {
+    margin-top: 1400px;
+  }
+  .TextoInicio {
+    margin-top: 1450px;
+    padding: 20px;
+  }
+  .GaleriaInicio {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    overflow-y: auto;
+    max-height: none;
+  }
+  .GaleriaItem {
+    height: auto;
+  }
+  .GaleriaItem img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .galeria-grid {
+    margin-top: 1380px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    /* Una columna en dispositivos móviles */
+    justify-content: center;
+  }
+  .galeria-grid img {
+    height: auto;
+  }
+  .ContenedorTextoNosotros {
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+  .ContenedorGaleriaCabañas {
+    gap: 10px;
+  }
+  .PaginaPanoramas {
+    margin-top: 100px;
+  }
+  .CardsPanoramas {
+    margin-top: 1100px;
+  }
 }
 @media screen and (max-width: 800px) {
-    .ContenerdorGaleriaCabaÃ±as {
-        grid-template-columns: 1fr;
-    }
+  .ContenerdorGaleriaCabaÃ±as {
+    grid-template-columns: 1fr;
+  }
 }
-
-/*-----------------------FIN DE MEDIA QUERIES--------------------------*/
+/*-----------------------FIN DE MEDIA QUERIES--------------------------*//*# sourceMappingURL=Estilos.css.map */
