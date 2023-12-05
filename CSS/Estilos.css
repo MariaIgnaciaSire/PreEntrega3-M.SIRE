@@ -317,9 +317,11 @@ footer .IconosRedes a{
 }
 @media screen and (max-width: 600px) {
     body {
-        padding-top: 80px;
+        padding-top: 150px;
     }
-
+    .PaginaCabañas{
+        margin-top: 1400px;
+    }
     .TextoInicio {
         margin-top: 1450px;
         padding: 20px; 
@@ -358,6 +360,12 @@ footer .IconosRedes a{
         margin-bottom: 80px; /* Ajusta según tus preferencias */
     }
 
+    .ContenedorGaleriaCabañas{
+        gap: 10px;
+    }
+    .PaginaPanoramas{
+        margin-top: 100px;
+    }
     .CardsPanoramas{
         margin-top: 1100px;
     }
