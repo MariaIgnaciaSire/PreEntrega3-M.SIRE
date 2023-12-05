@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/Estilos.css">
+    <title>La Loba</title>
+</head>
+<body>
+    <header>
+        <!--             INICIO NAVBAR              -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">La Loba 🦭</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="fa-solid fa-water"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page/Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page/Cabañas.html">Cabañas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page/Panoramas.html">Panoramas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Page/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--                 FIN NAVBAR                  -->
+    </header>
+    <main>
+        <!--               INICIO VIDEO DE FONDO                   -->
+        <div class="video-background">
+            <video autoplay muted loop id="VideoBackground" preload="auto" volume="0">
+                <source src="./Multimedia/Imágenes y Videos/MAR.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <!--               FIN VIDEO DE FONDO                 -->
+        <div class="content">
+            <!-- Texto del Home -->
+            <div class="TextoInicio">
+                <h2>Renueva tu espíritu: Desconéctate y recárgate de energía en nuestras cabañas.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsa unde. Nisi non nobis dolorem
+                    laboriosam. Amet exercitationem iste eius consectetur explicabo ipsam laudantium nobis in magni?
+                    Itaque, nesciunt dolorum.</p>
+                    <button class="boton" href="./Page/Cabañas.html">Ver cabañas</button>
+            </div>
+        </div>
+        <!--             FIN TEXTO DEL HOME                 -->
+        <!--             INICIO IMAGEN DEL HOME-->
+
+        <!--             FIN IMAGEN DEL HOME-->
+        <!--             INICIO GALERÍA GRID             -->
+        <div class="GaleriaInicio">
+            <!-- Item 1 -->
+            <div class="GaleriaItem">
+                <img src="./Multimedia/Imágenes y Videos/Cuba de agua.jpg" alt="Cuba de Agua">
+                <div class="descripcion">Cuba de agua al aire libre</div>
+            </div>
+            <!-- Item 2 -->
+            <div class="GaleriaItem">
+                <img src="./Multimedia/Imágenes y Videos/Desayuno.jpg" alt="Desayuno incluído">
+                <div class="descripcion">Desayuno completo incluído</div>
+            </div>
+            <!-- Item 3 -->
+            <div class="GaleriaItem">
+                <img src="./Multimedia/Imágenes y Videos/Sauna.jpg" alt="Sauna">
+                <div class="descripcion">Sauna</div>
+            </div>
+            <!-- Item 4 -->
+            <div class="GaleriaItem">
+                <img src="./Multimedia/Imágenes y Videos/Yoga y meditación.jpg" alt="Yoga y meditacion">
+                <div class="descripcion">Yoga y meditación</div>
+            </div>
+        </div>
+        <!--             FIN GALERÍA GRID             -->
+    </main>
+    <!--             INICIO DEL FOOTER                -->
+    <footer>
+        <p>Todos los derechos reservados por copyright.</p>
+        <div class="IconosRedes">
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <!--             FIN DEL FOOTER                -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
