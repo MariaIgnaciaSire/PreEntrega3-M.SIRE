@@ -115,6 +115,10 @@ main {
 }
 
 /*               INICIO DEL ESTILO DEL TEXTO DEL HOME             */
+h1 {
+  font-size: 35px;
+}
+
 .TextoInicio {
   padding: 20px;
   max-width: 80%;
