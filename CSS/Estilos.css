@@ -390,8 +390,9 @@ footer .IconosRedes a {
     margin-top: 1400px;
   }
   .TextoInicio {
-    margin-top: 1450px;
+    margin-top: 2050px;
     padding: 20px;
+    background-color: rgba(3, 54, 73, 0.8);
   }
   .GaleriaInicio {
     grid-template-columns: 1fr;
