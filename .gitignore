@@ -1,0 +1,5 @@
+# Ignorar archivos de configuración local
+config.local
+
+# Ignorar carpetas de dependencias
+node_modules/
