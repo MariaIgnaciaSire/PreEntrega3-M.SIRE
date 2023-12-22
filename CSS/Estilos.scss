@@ -131,7 +131,7 @@ h1{
     max-width: 80%;
     margin: auto;
     margin-top: 150px;
-    background-color: rgba(3, 54, 73, 0.5);
+    background-color: rgba(3, 54, 73, 0.8);
     font-family: GlacialRegular;
     position: relative;
     z-index: 2;
@@ -582,5 +582,24 @@ footer {
         width: 90%;
     }
 }
+@media screen and (max-width: 320px) {
+    .PaginaInicio{
+        margin-top: 1450px;
+    }
+    .PaginaNosotros{
+        margin-top: 2150px;
+    }
+    .galeria-grid{
+        width: 280px;
+    }
+    .ContenedorTextoNosotros{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
+    .ItemGaleriaCabañas {
+        width: 100%;
+        margin-left: -32px;
+    }  
+}
 /*-----------------------FIN DE MEDIA QUERIES--------------------------*/
