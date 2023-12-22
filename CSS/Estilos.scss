@@ -403,11 +403,17 @@ footer {
 /*----------------------FIN DEL ESTILO DEL FOOTER-------------------------*/
 /*-----------------------INICIO DE MEDIA QUERIES--------------------------*/
 @media screen and (max-width: 1629px){
+    .PaginaInicio{
+        margin-top: 200px;
+    }
     .TextoInicio{
         margin-bottom: 50px;
     }
+    .PaginaNosotros{
+        margin-top: 270px;
+    }
     .PaginaCabañas {
-        margin-top: 800px;
+        margin-top: 1000px;
     }
     .ContenedorGaleriaCabañas {
         margin-left: 10px;
@@ -415,8 +421,11 @@ footer {
     .ImagenGaleria {
         width: 480px;
     }
+    .PaginaPanoramas{
+        margin-top: 150px;
+    }
     .PaginaContacto {
-        margin-top: 250px;
+        margin-top: 350px;
         margin-bottom: 50px;
     }
 
@@ -433,10 +442,10 @@ footer {
         margin-right: 50px;
     }
     .PaginaNosotros {
-        margin-top: 250px;
+        margin-top: 300px;
     }
     .PaginaCabañas {
-        margin-top: 650px;
+        margin-top: 700px;
     }
     .ContenedorGaleriaCabañas {
         margin-left: 20px;
@@ -453,7 +462,7 @@ footer {
         margin-left: 40px;
     }
     .PaginaContacto {
-        margin-top: 300px;
+        margin-top: 380px;
         margin-bottom: 100px;
     }
 }
@@ -469,14 +478,17 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    .PaginaNosotros{
+        margin-top: 380px;
+    }
     .PaginaCabañas {
-        margin-top: 400px;
+        margin-top: 500px;
     }
     .ImagenGaleria {
         width: 300px;
     }
     .PaginaPanoramas {
-        margin-top: 500px;
+        margin-top: 600px;
         margin-bottom: 50px;
     }
     .CardsPanoramas {
@@ -510,10 +522,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
     .PaginaNosotros{
-        margin-top: 500px;
+        margin-top: 600px;
     }
     .PaginaCabañas {
-        margin-top: 850px;
+        margin-top: 900px;
     }
     .ItemGaleriaCabañas {
         height: 400px;
@@ -521,7 +533,7 @@ footer {
         margin-bottom: 20px;
     }
     .PaginaPanoramas {
-        margin-top: 1600px;
+        margin-top: 1700px;
     }
 }
 @media screen and (max-width: 535px) {
@@ -542,13 +554,13 @@ footer {
 
 @media screen and (max-width: 425px) {
     .PaginaInicio {
-        margin-top: 1200px;
+        margin-top: 1300px;
     }
     .GaleriaInicio {
         grid-template-columns: 1fr;
     }
     .PaginaNosotros{
-        margin-top: 1800px;
+        margin-top: 1900px;
     }
     .galeria-grid{
         grid-template-columns: 1fr;
@@ -561,7 +573,7 @@ footer {
         margin-right: 15px;
     }
     .PaginaCabañas{
-        margin-top: 2100px;
+        margin-top: 2200px;
     }
     .TextoCabañas{
     width: 90%;
@@ -571,7 +583,7 @@ footer {
         margin-left: 20px;
     }    
     .PaginaPanoramas {
-        margin-top: 1550px;
+        margin-top: 1650px;
     }
     .card {
         max-width: 90%;
@@ -584,10 +596,10 @@ footer {
 }
 @media screen and (max-width: 320px) {
     .PaginaInicio{
-        margin-top: 1450px;
+        margin-top: 1550px;
     }
     .PaginaNosotros{
-        margin-top: 2150px;
+        margin-top: 2200px;
     }
     .galeria-grid{
         width: 280px;
