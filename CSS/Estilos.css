@@ -97,9 +97,8 @@ main {
 
 .video-background {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -122,7 +121,7 @@ h1 {
   padding: 20px;
   max-width: 80%;
   margin: auto;
-  margin-top: 500px;
+  margin-top: 150px;
   background-color: rgba(3, 54, 73, 0.5);
   font-family: GlacialRegular;
   position: relative;
@@ -149,7 +148,7 @@ button:active {
   transform: scale(0.9);
 }
 
-/*               INICIO DEL ESTILO DEL TEXTO DEL HOME             */
+/*               FIN DEL ESTILO DEL TEXTO DEL HOME             */
 /*-----------------------INICIO ESTILO GALERIA GRID-------------------*/
 .GaleriaInicio {
   display: grid;
@@ -198,7 +197,7 @@ button:active {
 
 .galeria-grid {
   display: grid;
-  margin-top: 600px;
+  margin-top: 50px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   justify-content: center;
@@ -215,7 +214,9 @@ button:active {
 .ContenedorTextoNosotros {
   padding: 18px;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .TextoNosotros {
@@ -228,7 +229,7 @@ button:active {
 }
 
 /*-----------------------FIN ESTILO SECCIÃ“N NOSOTROS --------------*/
-/*-----------------------INICIO SECCION CABAÃ‘AS -------------------*/
+/*-----------------------INICIO SECCION CABAÑAS -------------------*/
 .PaginaCabañas {
   margin-top: 900px;
 }
@@ -237,13 +238,14 @@ button:active {
   background: rgba(3, 54, 73, 0.8);
   color: #cdb380;
   padding: 10px;
-  margin-top: 12px;
+  margin-top: 50px;
   font-family: GlacialRegular;
   border-radius: 8px;
 }
 
 .ContenedorGaleriaCabañas {
-  margin: 20px auto;
+  margin: 50px auto;
+  margin-left: 40px;
 }
 
 .ItemGaleriaCabaÃ±as {
@@ -257,15 +259,16 @@ button:active {
 }
 
 .ImagenGaleria {
-  width: 100%;
+  width: 550px;
   height: auto;
   display: block;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 50px;
 }
 
-/*-----------------------FIN SECCION CABAÃ‘AS -------------------*/
+/*-----------------------FIN SECCION CABAÑAS -------------------*/
 /*----------------------- INICIO SECCION PANORAMAS---------------*/
 .PaginaPanoramas {
   margin-top: 180px;
@@ -280,8 +283,8 @@ button:active {
   flex: 1;
   background-color: rgba(3, 54, 73, 0.8);
   max-height: 600px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .card-title,
@@ -311,7 +314,8 @@ button:active {
 /*----------------------- FIN SECCION PANORAMAS---------------*/
 /*----------------------- INICIO SECCION CONTACTO-------------*/
 .PaginaContacto {
-  margin-top: 500px;
+  margin-top: 180px;
+  margin-bottom: 50px;
 }
 
 .FondoTransparente {
@@ -365,7 +369,6 @@ button:active {
 /*----------------------- FIN SECCION CONTACTO-------------*/
 /*----------------------ESTILO DEL FOOTER--------------------------------*/
 footer {
-  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: #033649;
@@ -373,7 +376,7 @@ footer {
   font-family: GlacialRegular;
   text-align: center;
   z-index: 2;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 footer .IconosRedes a {
   color: #cdb380;
@@ -384,55 +387,79 @@ footer .IconosRedes a {
 
 /*----------------------FIN DEL ESTILO DEL FOOTER-------------------------*/
 /*-----------------------INICIO DE MEDIA QUERIES--------------------------*/
-@media screen and (max-width: 600px) {
-  body {
-    padding-top: 150px;
+@media screen and (max-width: 1629px) {
+  .TextoInicio {
+    margin-bottom: 50px;
   }
   .PaginaCabañas {
-    margin-top: 1400px;
+    margin-top: 800px;
   }
+  .ContenedorGaleriaCabañas {
+    margin-left: 10px;
+  }
+  .ImagenGaleria {
+    width: 480px;
+  }
+  .PaginaContacto {
+    margin-top: 250px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1440px) {
   .TextoInicio {
-    margin-top: 2500px;
-    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 250px;
   }
   .GaleriaInicio {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    overflow-y: auto;
-    max-height: none;
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  .GaleriaItem {
-    height: auto;
+  .PaginaNosotros {
+    margin-top: 250px;
   }
-  .GaleriaItem img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .PaginaCabañas {
+    margin-top: 650px;
   }
-  .galeria-grid {
-    margin-top: 1750px;
-    padding: 10px;
-    grid-template-columns: 1fr;
-    /* Una columna en dispositivos móviles */
-    justify-content: center;
+  .ContenedorGaleriaCabañas {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .galeria-grid img {
-    height: auto;
-  }
-  .ContenedorTextoNosotros {
-    margin-top: 10px;
-    margin-bottom: 80px;
-  }
-  .TextoCabañas {
-    margin-top: 450px;
-    width: 90%;
-  }
-  .ItemGaleriaCabañas {
-    margin-bottom: 10px;
+  .ImagenGaleria {
+    width: 400px;
   }
   .PaginaPanoramas {
-    margin-top: 1700px;
+    margin-top: 150px;
+  }
+  .card {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .PaginaContacto {
+    margin-top: 300px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1091px) {
+  .PaginaPanoramas {
+    margin-top: 450px;
+  }
+  .card {
+    flex: none;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .PaginaCabañas {
+    margin-top: 400px;
+  }
+  .ImagenGaleria {
+    width: 300px;
+  }
+  .PaginaPanoramas {
+    margin-top: 500px;
+    margin-bottom: 50px;
   }
   .CardsPanoramas {
     flex-direction: column;
@@ -440,7 +467,96 @@ footer .IconosRedes a {
   .card {
     flex: none;
     max-width: 90%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .PaginaInicio {
+    margin-top: 500px;
+  }
+  .GaleriaInicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .PaginaPanoramas {
+    margin-top: 1600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .PaginaInicio {
+    margin-top: 200px;
+  }
+  .TextoInicio {
+    margin-top: 850px;
+  }
+  .GaleriaInicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .PaginaNosotros {
+    margin-top: 500px;
+  }
+  .PaginaCabañas {
+    margin-top: 850px;
+  }
+  .ItemGaleriaCabañas {
+    height: 400px;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+  .PaginaPanoramas {
+    margin-top: 1600px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .PaginaInicio {
+    margin-top: 1100px;
+  }
+  .GaleriaInicio {
+    grid-template-columns: 1fr;
+  }
+  .PaginaNosotros {
+    margin-top: 1650px;
+  }
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .PaginaInicio {
+    margin-top: 1200px;
+  }
+  .GaleriaInicio {
+    grid-template-columns: 1fr;
+  }
+  .PaginaNosotros {
+    margin-top: 1800px;
+  }
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    width: 350px;
+  }
+  .ContenedorTextoNosotros {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .PaginaCabañas {
+    margin-top: 2100px;
+  }
+  .TextoCabañas {
+    width: 90%;
+  }
+  .ItemGaleriaCabañas {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .PaginaPanoramas {
+    margin-top: 1550px;
+  }
+  .card {
+    max-width: 90%;
+    margin-bottom: 20px;
   }
   .ContenedorFormulario {
     margin-top: 5px;
